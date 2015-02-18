@@ -7,24 +7,37 @@
 
 <body>
 
+
+
+  <!--TRYING TO MAKE BUTTON PASS ID AS ARGUMENT IN FUNCTION IN MAKE_GALBOT.PY<form action="/makestation/formsubmit">
+  <button id="1" onClick="submit_form(this.id)"><img src="/static/face1.jpg"></button>
+  <input type="submit" value="Choose Face">
+  </form>
+  <button id="2" onClick="face_choice(this.id)"><img src="/static/face2.jpg"></button>
+  <button id="3" onClick="face_choice(this.id)"><img src="/static/face3.jpg"></button>-->
+
+  <button id="1" onClick="face_choice(this.id)"><img src="/static/face1.jpg"></button>
+  <button id="2" onClick="face_choice(this.id)"><img src="/static/face2.jpg"></button>
+  <buttom id="3" onClick="face_choice(this.id)"><img src="/static/face3.jpg"></button>
+
+  <script type="text/javascript">
+  function face_choice(chosen_face) {
+    alert(chosen_face);
+  }
+  </script>
+
+
+
+  <!--WORKING RADIO BUTTONS
   <form action="/makestation/formsubmit">
-    <input type="radio" name="face" value="one">
+    <div class="button">
+      <input type="radio" name="face" value="one" id="faceone" style="display:none">
+      <label for="faceone"><img src="static/face1.jpg"></label>
+    </div>
     <input type="radio" name="face" value="two">
     <input type="radio" name="face" value="three">
     <input type="submit" value="Submit">
-  </form>
-
-
-</ul>
-<ul>
-
-<img src="static/body1.jpg" title="Body 1"><img src="static/body2.jpg" title="Body 2"><img src="static/body3.jpg" title="Body 3">
-
-</ul>-->
-
-
-
-</script>
+  </form>-->
 
 </body>
 

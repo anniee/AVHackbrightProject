@@ -15,8 +15,11 @@ def welcome_page():
 
 @app.route('/makestation')
 def make_galbot():
-	return render_template("main_page.html")
+	return render_template("main_page_radiotest.html")
 
+@app.route('/makestation/formsubmit')
+def submit_form():
+	return "hello"
 
 if __name__ == '__main__':
     # debug=True gives us error messages in the browser and also "reloads" our web app

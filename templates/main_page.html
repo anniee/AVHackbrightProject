@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<!-- jQuery library (served from Google) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+<!-- bxSlider Javascript file -->
+<script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
+
+<!-- bxSlider CSS file -->
+<link href="http://bxslider.com/lib/jquery.bxslider.css" rel="stylesheet" />
+
+
+
+
+<ul class="bxslider">
+
+ <li><button type="button" onclick="faceChoice(1)"><img src="static/face1.jpg" title="Face 1"></li>
+ <li><img src="static/face2.jpg" title="Face 2"></li>
+ <li><img src="static/face3.jpg" title="Face 3"></li>
+
+</ul>
+
+<script>
+function faceChoice(number) {
+
+	console.log(number);
+	return number;
+};
+</script>
+
+
+<ul class="bxslider2">
+ <li><img src="static/body1.jpg" title="Body 1"></li>
+ <li><img src="static/body2.jpg" title="Body 2"></li>
+ <li><img src="static/body3.jpg" title="Body 3"></li>
+
+</ul>
+
+
+<!-- <ul class="bxslider">
+  <li><img src="/static/face.jpg" /></li>
+  <li><img src="/static/face2.jpg" /></li>
+</ul> -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: true,
+        auto: true,
+        autoControls: false
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.bxslider2').bxSlider({
+        mode: 'fade',
+        captions: true,
+        auto: true,
+        autoControls: false
+    });
+  });
+</script>
+
+
+<!-- <div class="bxslider">
+  <div class="slide"><img src="/static/face.jpg"></div>
+  <div class="slide"><img src="/static/face2.jpg"></div>
+</div> -->
+
+</body>
+
+</html>

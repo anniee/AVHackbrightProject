@@ -16,7 +16,7 @@
   <button id="2" onClick="face_choice(this.id)"><img src="/static/face2.jpg"></button>
   <button id="3" onClick="face_choice(this.id)"><img src="/static/face3.jpg"></button>-->
 
-  <button id="1" onClick="face_choice(this.id)"><img src="/static/face1.jpg"></button>
+  <!--<button id="1" onClick="face_choice(this.id)"><img src="/static/face1.jpg"></button>
   <button id="2" onClick="face_choice(this.id)"><img src="/static/face2.jpg"></button>
   <buttom id="3" onClick="face_choice(this.id)"><img src="/static/face3.jpg"></button>
 
@@ -24,20 +24,42 @@
   function face_choice(chosen_face) {
     alert(chosen_face);
   }
-  </script>
+  </script>-->
 
 
 
-  <!--WORKING RADIO BUTTONS
+  <!--WORKING RADIO BUTTONS-->
   <form action="/makestation/formsubmit">
-    <div class="button">
-      <input type="radio" name="face" value="one" id="faceone" style="display:none">
-      <label for="faceone"><img src="static/face1.jpg"></label>
-    </div>
-    <input type="radio" name="face" value="two">
-    <input type="radio" name="face" value="three">
-    <input type="submit" value="Submit">
-  </form>-->
+      
+    <tr>
+      <input type="radio" name="face" value="1" id="1">
+      <label for="1"><img src="static/face1.jpg"></label>
+      <input type="radio" name="face" value="2" id="2">
+      <label for="2"><img src="static/face2.jpg"></label>
+      <input type="radio" name="face" value="3" id="3">
+      <label for="3"><img src="static/face3.jpg"></label>
+    </tr>
+
+    <tr>
+      <input type="radio" name="body" value="1" id="1">
+      <label for="1"><img src="static/body1.jpg"></label>
+      <input type="radio" name="body" value="2" id="2">
+      <label for="2"><img src="static/body2.jpg"></label>
+      <input type="radio" name="body" value="3" id="3">
+      <label for="3"><img src="static/body3.jpg"></label>
+    </tr>
+
+      <!--<tr>
+      <input type="radio" name="legs" value="1" id="1" style="display:none">
+      <label for="1"><img src="static/legs1.jpg"></label>
+      <input type="radio" name="legs" value="2" id="2" style="display:none">
+      <label for="2"><img src="static/legs2.jpg"></label>
+      <input type="radio" name="legs" value="3" id="3" style="display:none">
+      <label for="3"><img src="static/legs3.jpg"></label>
+    </tr>-->
+
+  <input type="submit" value="Make!">
+  </form>
 
 </body>
 

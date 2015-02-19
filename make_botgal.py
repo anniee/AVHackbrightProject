@@ -19,7 +19,12 @@ def make_galbot():
 
 @app.route('/makestation/formsubmit')
 def submit_form():
-	return ok
+	a = request.args.get('face')
+	b = request.args.get('body')
+	filename = a + b + ".stl"
+	return filename
+	
+
 
 if __name__ == '__main__':
     # debug=True gives us error messages in the browser and also "reloads" our web app

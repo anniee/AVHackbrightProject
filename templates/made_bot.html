@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<!-- can I put an if statement here, in jinja? like to specifcy if whaterver = 12, render 12.jpg?-->
+
+<body>
+	<img src="/static/{{ jpg_filename }}"/> 
+
+<form action="/makestation/formsubmit/uploadtoimat">
+    <input type="text" name="filename" value="static/{{ stl_filename }}">
+    <!-- input type hidden later-->
+	<input type="submit" value="Purchase your model on i.materialise!">
+</form>
+
+</body>
+
+</html>

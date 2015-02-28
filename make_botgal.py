@@ -1,16 +1,17 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
+import base64
+import requests
+import json
+import os
 
 app = Flask(__name__)
 
 
-#route to handle the landing page of the BotGals website
+#route to handle the landing page of the BitzBots website
 @app.route('/')
 def welcome_page():
-	#Eventually, put in html/css of rocket ship symbol to click to enter main page /makestation
 	
 	return render_template("home_page.html")
-
-	#return "Welcome to the World of BotGals. ~~~Making robot gals since 2015~~~"
 
 
 @app.route('/makestation')
@@ -21,10 +22,39 @@ def make_galbot():
 def submit_form():
 	a = request.args.get('face')
 	b = request.args.get('body')
-	filename = a + b + ".stl"
-	return filename
-	
+	jpg_filename = a + b + ".jpg"
+	stl_filename = a + b + ".stl"
 
+
+	#if filename == "12.stl":
+	#return render_template("made_bot.html", filename=filename)
+	return render_template("made_bot.html", jpg_filename=jpg_filename, stl_filename=stl_filename)
+	#else:
+	#	return filename
+
+@app.route('/makestation/formsubmit/uploadtoimat')
+def upload_to_imat():
+	print request.args.get('filename')
+	thefilename = str(request.args.get('filename'))
+#need to make this open the stl file specified above
+	files = open(thefilename, 'rb')
+
+	payload = {
+		"useAjax": False,
+		"forceEmbedding": False,
+		"plugin": "PUT YOUR TOOL ID HERE, ANNE"
+		#"plugin": str(TOOL_ID),
+	}
+
+	response = requests.post("http://imatsandbox.materialise.net/upload", 
+		data=payload, 
+		files={'file': files},
+		allow_redirects=False)
+
+	
+	#print response.headers
+	#return response.headers['location']
+	return redirect(response.headers['location'])
 
 if __name__ == '__main__':
     # debug=True gives us error messages in the browser and also "reloads" our web app

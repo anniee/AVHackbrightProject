@@ -42,7 +42,7 @@ def upload_to_imat():
 	payload = {
 		"useAjax": False,
 		"forceEmbedding": False,
-		"plugin": "PUT YOUR TOOL ID HERE, ANNE"
+		"plugin": os.environ.get("TOOL_ID")
 		#"plugin": str(TOOL_ID),
 	}
 

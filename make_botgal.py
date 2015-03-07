@@ -22,13 +22,14 @@ def make_galbot():
 def submit_form():
 	a = request.args.get('face')
 	b = request.args.get('body')
-	jpg_filename = a + b + ".jpg"
-	stl_filename = a + b + ".stl"
+	c = request.args.get('legs')
+	jpg_filename = a + b + c + ".png"
+	stl_filename = a + b + c + ".stl"
 
 
 	#if filename == "12.stl":
 	#return render_template("made_bot.html", filename=filename)
-	return render_template("made_bot.html", jpg_filename=jpg_filename, stl_filename=stl_filename)
+	return render_template("made_bot.html", png_filename=jpg_filename, stl_filename=stl_filename)
 	#else:
 	#	return filename
 

@@ -8,12 +8,15 @@
   <script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
   <!-- bxSlider CSS file -->
   <link href="http://bxslider.com/lib/jquery.bxslider.css" rel="stylesheet" />
+  <link href="static/makestationcss.css" rel="stylesheet">
+  <script type="text/javascript" src="/static/makestationjquery.js"></script>
 </head>
 
 <body>
 <ul class="bxslider">
 
- <li><img src="static/face1.png" title="Face 1"></li>
+ <li><input type="radio" name="face" value="1" id="1"  style="display:none">
+  <label for="1"><img src="static/face1.png" title="Face 1"></label></li>
  <li><img src="static/face2.png" title="Face 2"></li>
  <li><img src="static/face3.png" title="Face 3"></li>
 
@@ -41,12 +44,13 @@ function faceChoice(number) {
   <li><img src="/static/face2.jpg" /></li>
 </ul> -->
 
+<!--defined div for height-->
 <script type="text/javascript">
   $(document).ready(function(){
     $('.bxslider').bxSlider({
         mode: 'fade',
         captions: true,
-        auto: true,
+        auto: false,
         autoControls: false
     });
   });
@@ -57,7 +61,7 @@ function faceChoice(number) {
     $('.bxslider2').bxSlider({
         mode: 'fade',
         captions: true,
-        auto: true,
+        auto: false,
         autoControls: false
     });
   });

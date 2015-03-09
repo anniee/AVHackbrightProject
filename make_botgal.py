@@ -16,7 +16,7 @@ def welcome_page():
 
 @app.route('/makestation')
 def make_galbot():
-	return render_template("main_page.html")
+	return render_template("main_page_radiotest.html")
 	#return render_template("main_page_radiotest.html")
 
 @app.route('/makestation/formsubmit')
@@ -24,17 +24,28 @@ def submit_form():
 	a = request.args.get('face')
 	b = request.args.get('body')
 	c = request.args.get('legs')
-	jpg_filename = a + b + c + ".png"
+	filename1 = a + b + c + ".png"
 	stl_filename = a + b + c + ".stl"
 
 
 	#if filename == "12.stl":
 	#return render_template("made_bot.html", filename=filename)
-	return render_template("made_bot.html", png_filename=jpg_filename, stl_filename=stl_filename)
+	return render_template("made_bot.html", png_filename=filename1)
 	#else:
 	#	return filename
 
-@app.route('/makestation/formsubmit/uploadtoimat')
+@app.route('/makestaton/formsubmit/gallery')
+def upload_to_gallery():
+	png = request.args.get('pngfile')
+	print png
+
+	#png = png.rstrip('.png')
+	#stl_name = png + ".stl"
+	stl_name = png.rstrip('.png') + ".stl"
+
+	return render_template("gallery.html", png_filename=png, stl_filename=stl_name)
+
+@app.route('/makestation/formsubmit/gallery/uploadtoimat')
 def upload_to_imat():
 	print request.args.get('filename')
 	thefilename = str(request.args.get('filename'))

@@ -13,38 +13,56 @@
 </head>
 
 <body>
-<ul class="bxslider">
 
- <li><input type="radio" name="face" value="1" id="1"  style="display:none">
-  <label for="1"><img src="static/face1.png" title="Face 1"></label></li>
- <li><img src="static/face2.png" title="Face 2"></li>
- <li><img src="static/face3.png" title="Face 3"></li>
+<form action="/makestation/formsubmit">
+<div class="carousel">
+  <ul class="bxslider">
 
-</ul>
+  <tr>
+    <li><input type="radio" name="face" value="1" id="1"  style="display:none">
+    <label for="1"><img src="static/face1.png" title="Face 1"></label></li>
+    <li><input type="radio" name="face" value="2" id="2" style="display:none">
+    <label for="2"><div id="face2"><img src="static/face2.png" title="Face 2"></label></li>
+    <li><input type="radio" name="face" value="3" id="3" style="display:none">
+    <label for="3"><div id="face3"><img src="static/face3.png" title="Face 3"></label></li>
+  </tr>
+  </ul>
 
-<!--<script>
-function faceChoice(number) {
+  <!--<script>
+  function faceChoice(number) {
 
-	console.log(number);
-	return number;
-};
-</script>-->
-
-
-<ul class="bxslider2">
- <li><img src="static/body1.png" title="Body 1"></li>
- <li><img src="static/body2.png" title="Body 2"></li>
- <li><img src="static/body3.png" title="Body 3"></li>
-
-</ul>
+  	console.log(number);
+  	return number;
+  };
+  </script>-->
 
 
-<!-- <ul class="bxslider">
-  <li><img src="/static/face.jpg" /></li>
-  <li><img src="/static/face2.jpg" /></li>
-</ul> -->
+  <ul class="bxslider2">
 
-<!--defined div for height-->
+    <li><input type="radio" name="body" value="1" id="1"  style="display:none">
+    <label for="1"><div id="body1"><img src="static/body1.png" title="Body 1"></label></li>
+    <li><input type="radio" name="body" value="2" id="2" style="display:none">
+    <label for="2"><div id="body2"><img src="static/body2.png" title="Body 2"></label></li>
+    <li><input type="radio" name="body" value="3" id="3" style="display:none">
+    <label for="3"><div id="body3"><img src="static/body3.png" title="Body 3"></label></li>
+
+  </ul>
+
+  <ul class="bxslider3">
+
+    <li><input type="radio" name="legs" value="1" id="1"  style="display:none">
+    <label for="1"><div id="legs1"><img src="static/legs1.png" title="Legs 1"></label></li>
+    <li><input type="radio" name="legs" value="2" id="2" style="display:none">
+    <label for="2"><div id="legs2"><img src="static/legs2.png" title="Legs 2"></label></li>
+    <li><input type="radio" name="legs" value="3" id="3" style="display:none">
+    <label for="3"><div id="legs3"><img src="static/legs3.png" title="Legs 3"></label></li>
+
+  </ul>
+
+</div>
+
+
+
 <script type="text/javascript">
   $(document).ready(function(){
     $('.bxslider').bxSlider({
@@ -67,11 +85,19 @@ function faceChoice(number) {
   });
 </script>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.bxslider3').bxSlider({
+        mode: 'fade',
+        captions: true,
+        auto: false,
+        autoControls: false
+    });
+  });
+</script>
 
-<!-- <div class="bxslider">
-  <div class="slide"><img src="/static/face.jpg"></div>
-  <div class="slide"><img src="/static/face2.jpg"></div>
-</div> -->
+<input type="submit" value="Make!">
+</form>
 
 </body>
 

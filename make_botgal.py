@@ -3,6 +3,7 @@ import base64
 import requests
 import json
 import os
+import model
 
 app = Flask(__name__)
 
@@ -33,19 +34,33 @@ def submit_form():
 	return render_template("made_bot.html", png_filename=filename1)
 	#else:
 	#	return filename
+@app.route('/gallery')
+def list_bots():
+	""" Gallery showing all bots"""
+	bots = model.get_bots()
+	return render_template("gallery.html", bot_list=bots)
 
-@app.route('/makestaton/formsubmit/gallery')
+
+
+@app.route('/makestaton/formsubmit/bot')
 def upload_to_gallery():
+	
+	bot_name = request.args.get('botname')
+	maker_name = request.args.get('makername')
+	maker_age = request.args.get('makerage')
+	imgurl = request.args.get('pngfile')
+
+	newbot = model.make_new_bot(bot_name, maker_name, maker_age, imgurl)
+	return newbot
+
+def show_bot():
 	png = request.args.get('pngfile')
 	print png
-
-	#png = png.rstrip('.png')
-	#stl_name = png + ".stl"
 	stl_name = png.rstrip('.png') + ".stl"
 
-	return render_template("gallery.html", png_filename=png, stl_filename=stl_name)
+	return render_template("bot.html", png_filename=png, stl_filename=stl_name)
 
-@app.route('/makestation/formsubmit/gallery/uploadtoimat')
+@app.route('/makestation/formsubmit/bot/uploadtoimat')
 def upload_to_imat():
 	print request.args.get('filename')
 	thefilename = str(request.args.get('filename'))

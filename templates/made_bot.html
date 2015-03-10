@@ -8,8 +8,22 @@
 <body>
 	<div><img src="/static/{{ png_filename }}"/></div>
 
-<form action="/makestaton/formsubmit/gallery">
-	<input type="submit" name="pngfile" value="{{ png_filename }}" id="1"><label>Upload your bot to the gallery!</label>
+<form action="/makestaton/formsubmit/bot">
+
+	Name Your BitzBot:<br>
+	<input type="text" name="botname">
+	<br>
+	Enter Your Name:<br>
+	<input type="text" name="makername">
+	<br>
+	Enter Your Age:<br>
+	<input type="text" name="makerage">
+	<br> 
+	<input type="text" name="{{ png_filename }}"/>
+
+	<input type="submit" name="botstuff"" id="ok"><label for="ok">Upload your bot"</label>
+	
+	<!--<input type="submit" name="pngfile" value="{{ png_filename }}" id="1"><label for="1">"Upload your bot to the gallery!"</label>-->
 </form>
 
 <!--<form action="/makestation/formsubmit/uploadtoimat">

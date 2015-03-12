@@ -55,3 +55,14 @@ def get_bots():
 		bot = Bot(row[0], row[1], row[2], row[3])
 		bots.append(bot)
 	return bots
+
+def get_bots_by_name(bot_name):
+	"""Query for a specific bot in the database by the botname"""
+	cursor = connect()
+	query = """SELECT bot_name, maker_name, maker_age, imgurl FROM Bots WHERE bot_name = ?;"""
+
+	cursor.execute(query, (bot_name,))
+	row = cursor.fetchone()
+
+	botdeets = Bot(row[0], row[1], row[2], row[3])
+	return botdeets

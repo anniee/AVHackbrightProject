@@ -63,6 +63,13 @@ def show_bot():
 	print stl_name
 	return render_template("bot.html", png_filename=png2, stl_filename=stl_name)
 
+@app.route('/botdetails/<bot_name>')
+def show_bot_deets(bot_name):
+	"""This page shows the details of a specific bot, as well as giving option to purchase bot on imat"""
+	botdeets = model.get_bots_by_name(bot_name)
+	print botdeets
+	return render_template("botdeets.html", display_bot = botdeets)
+
 @app.route('/makestation/formsubmit/bot/uploadtoimat')
 def upload_to_imat():
 	print request.args.get('filename')

@@ -49,16 +49,19 @@ def upload_to_gallery():
 	maker_name = request.args.get('makername')
 	maker_age = request.args.get('makerage')
 	imgurl = request.args.get('pngfile')
-
+	print imgurl
 	newbot = model.make_new_bot(bot_name, maker_name, maker_age, imgurl)
-	return newbot
+	return newbot, show_bot()
 
+# @app.route('/bot')
 def show_bot():
 	png = request.args.get('pngfile')
-	print png
+	png2 = "/static/" + png
+	print png2
 	stl_name = png.rstrip('.png') + ".stl"
-
-	return render_template("bot.html", png_filename=png, stl_filename=stl_name)
+	#stl_name = png.rstrip('.png') + ".stl"
+	print stl_name
+	return render_template("bot.html", png_filename=png2, stl_filename=stl_name)
 
 @app.route('/makestation/formsubmit/bot/uploadtoimat')
 def upload_to_imat():

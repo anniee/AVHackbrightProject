@@ -19,12 +19,19 @@
 	Enter Your Age:<br>
 	<input type="text" name="makerage">
 	<br> 
-	<input type="text" name="{{ png_filename }}"/>
+	<input name="pngfile" value="{{ png_filename }}"/>
 
-	<input type="submit" name="botstuff"" id="ok"><label for="ok">Upload your bot"</label>
+	<!--<img src="/static/{{ png_filename }}"/>-->
+	<!--<input type="image" src="/static/{{ png_filename }}" name="pngfile" value="/static/{{ png_filename }}" id="/static/{{ png_filename }}"/>-->
+
+	<input type="checkbox" name="botstuff" id="ok"><label for="ok">Upload your bot</label>
 	
 	<!--<input type="submit" name="pngfile" value="{{ png_filename }}" id="1"><label for="1">"Upload your bot to the gallery!"</label>-->
+	<input type="submit" value"upload your bot to the gallery!">
 </form>
+
+<!-- <form action="/bot">
+	<input type="text" name="filename"/> -->
 
 <!--<form action="/makestation/formsubmit/uploadtoimat">
     <input type="text" name="filename" value="static/stl/{{ stl_filename }}">-->

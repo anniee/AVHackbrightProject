@@ -14,6 +14,9 @@ def welcome_page():
 	
 	return render_template("home_page.html")
 
+@app.route('/about')
+def about():
+	return render_template("about.html")
 
 @app.route('/makestation')
 def make_galbot():

@@ -4,8 +4,8 @@ body div {
 }
 
 body h1 {
-	color: #f380df;
-	/*background-color: #d3d3d3;*/
+	color: #ebc2f4;
+	background-color: #b2a1b3;
 	font-weight: bold;
 	font-size: 80px;
 	margin-top: 10px;
@@ -15,6 +15,8 @@ body h1 {
 }
 
 body h2 {
+
+	color: #7b9cb2;
 	text-align: left;
 	padding-left: 75px;
 	padding-bottom: 20px;
@@ -47,7 +49,7 @@ body h5 {
    width:250px;  
    margin:5px;  
    padding:0;  
-   background-color:#b2a1b3;  
+   background-color:#d3b3d5;  
    -webkit-border-top-right-radius: 10px 25px;  
    -moz-border-radius-topright:10px 25px;  
    border-top-right-radius: 10px 25px;  

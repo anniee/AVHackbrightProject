@@ -1,6 +1,8 @@
-$(document).ready(function() {
 
-	$(".bxslider").click(function() {
-		alert("face selected");
-	});
-});
+
+// $(document).ready(function() {
+
+// 	$(".bxslider").click(function() {
+// 		alert("face selected");
+// 	});
+// });

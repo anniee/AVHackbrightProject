@@ -8,7 +8,7 @@
   <script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
   <!-- bxSlider CSS file -->
   <link href="http://bxslider.com/lib/jquery.bxslider.css" rel="stylesheet" />
-  <link href="static/makestationcss.css" rel="stylesheet">
+  <link href="static/makestationcss.css" rel="stylesheet"/>
   <script type="text/javascript" src="/static/makestationjquery.js"></script>
 </head>
 
@@ -19,44 +19,47 @@
   <ul class="bxslider">
 
   <tr>
-    <li><input type="radio" name="face" value="1" id="1"  style="display:none">
-    <label for="1"><img src="static/face1.png" title="Face 1"></label></li>
-    <li><input type="radio" name="face" value="2" id="2" style="display:none">
-    <label for="2"><div id="face2"><img src="static/face2.png" title="Face 2"></label></li>
-    <li><input type="radio" name="face" value="3" id="3" style="display:none">
-    <label for="3"><div id="face3"><img src="static/face3.png" title="Face 3"></label></li>
+    <li><input type="radio" name="face" value="1" id="f1">
+    <label for="f1"><img src="static/face1.png" title="Face 1"></label></li>
+    <li><input type="radio" name="face" value="2" id="f2">
+    <label for="f2"><img src="static/face2.png" title="Face 2"></label></li>
+    <li><input type="radio" name="face" value="3" id="f3">
+    <label for="f3"><img src="static/face3.png" title="Face 3"></label></li>
   </tr>
+
   </ul>
 
+<!-- after id put style="display:none" to hide buttons -->
   <!--<script>
   function faceChoice(number) {
-
   	console.log(number);
   	return number;
   };
+  got rid of <div id="face1"> before <img
   </script>-->
 
 
   <ul class="bxslider2">
 
-    <li><input type="radio" name="body" value="1" id="1"  style="display:none">
-    <label for="1"><div id="body1"><img src="static/body1.png" title="Body 1"></label></li>
-    <li><input type="radio" name="body" value="2" id="2" style="display:none">
-    <label for="2"><div id="body2"><img src="static/body2.png" title="Body 2"></label></li>
-    <li><input type="radio" name="body" value="3" id="3" style="display:none">
-    <label for="3"><div id="body3"><img src="static/body3.png" title="Body 3"></label></li>
-
+  <tr>  
+    <li><input type="radio" name="body" value="1" id="b1">
+    <label for="b1"><img src="static/body1.png" title="Body 1"></label></li>
+    <li><input type="radio" name="body" value="2" id="b2">
+    <label for="b2"><img src="static/body2.png" title="Body 2"></label></li>
+    <li><input type="radio" name="body" value="3" id="b3">
+    <label for="b3"><img src="static/body3.png" title="Body 3"></label></li>
+  </tr>
   </ul>
 
   <ul class="bxslider3">
-
-    <li><input type="radio" name="legs" value="1" id="1"  style="display:none">
-    <label for="1"><div id="legs1"><img src="static/legs1.png" title="Legs 1"></label></li>
-    <li><input type="radio" name="legs" value="2" id="2" style="display:none">
-    <label for="2"><div id="legs2"><img src="static/legs2.png" title="Legs 2"></label></li>
-    <li><input type="radio" name="legs" value="3" id="3" style="display:none">
-    <label for="3"><div id="legs3"><img src="static/legs3.png" title="Legs 3"></label></li>
-
+  <tr>
+    <li><input type="radio" name="legs" value="1" id="l1">
+    <label for="l1"><img src="static/legs1.png" title="Legs 1"></label></li>
+    <li><input type="radio" name="legs" value="2" id="l2">
+    <label for="l2"><img src="static/legs2.png" title="Legs 2"></label></li>
+    <li><input type="radio" name="legs" value="3" id="l3">
+    <label for="l3"><img src="static/legs3.png" title="Legs 3"></label></li>
+  </tr>
   </ul>
 
 </div>
@@ -86,14 +89,14 @@
 </script>
 
 <script type="text/javascript">
-  $(document).ready(function(){
-    $('.bxslider3').bxSlider({
-        mode: 'fade',
-        captions: true,
-        auto: false,
-        autoControls: false
-    });
-  });
+   $(document).ready(function(){
+     $('.bxslider3').bxSlider({
+         mode: 'fade',
+         captions: true,
+         auto: false,
+         autoControls: false
+     });
+   });
 </script>
 
 <input type="submit" value="Make!">

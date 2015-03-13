@@ -20,7 +20,7 @@ def about():
 
 @app.route('/makestation')
 def make_galbot():
-	return render_template("main_page_radiotest.html")
+	return render_template("main_page.html")
 	#return render_template("main_page_radiotest.html")
 
 @app.route('/makestation/formsubmit')

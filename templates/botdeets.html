@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>
+{% extends 'base.html' %}
+{% block body %}
 
-<body>
+<div id="bot_deet"> 
 
 	<h2>{{ display_bot.common_name }}</h2>
 <img class="product-img" src="/static/{{display_bot.imgurl}}">
@@ -17,7 +15,4 @@
 	</ul>
 </div>
 
-
-</body>
-
-</html>
+{% endblock %}

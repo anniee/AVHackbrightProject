@@ -1,6 +1,6 @@
 
 .carousel {
-	width: 300px;
+	width: 400px;
 	height: 300px;
 	margin-left: auto;
 	margin-right: auto;
@@ -10,9 +10,11 @@
 	opacity:0.75;
 }*/
 
-/*img:active {
+
+
+img:active {
 	opacity: 0.3;
-}*/
+}
 
 /*#face1 {
 	border-style: solid;

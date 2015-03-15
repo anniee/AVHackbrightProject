@@ -7,23 +7,25 @@
   <!-- bxSlider Javascript file -->
   <script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
   <!-- bxSlider CSS file -->
-  <link href="http://bxslider.com/lib/jquery.bxslider.css" rel="stylesheet" />
+ <link href="http://bxslider.com/lib/jquery.bxslider.css" rel="stylesheet" />
   <link href="static/makestationcss.css" rel="stylesheet"/>
-  <script type="text/javascript" src="/static/makestationjquery.js"></script>
+ <link rel="stylesheet" type="text/css" href="/static/test.css">
+  <script type="text/javascript" src="static/makestationjquery.js"></script>
 </head>
 
 <body>
+<div id="progress"><img src="static/progress.gif"></div>
 
 <form action="/makestation/formsubmit">
 <div class="carousel">
   <ul class="bxslider">
 
   <tr>
-    <li><input type="radio" name="face" value="1" id="f1">
+    <li><input type="radio" name="face" value="1" id="f1" style="display:none"> 
     <label for="f1"><img src="static/face1.png" title="Face 1"></label></li>
-    <li><input type="radio" name="face" value="2" id="f2">
+    <li><input type="radio" name="face" value="2" id="f2" style="display:none">
     <label for="f2"><img src="static/face2.png" title="Face 2"></label></li>
-    <li><input type="radio" name="face" value="3" id="f3">
+    <li><input type="radio" name="face" value="3" id="f3" style="display:none">
     <label for="f3"><img src="static/face3.png" title="Face 3"></label></li>
   </tr>
 
@@ -42,27 +44,67 @@
   <ul class="bxslider2">
 
   <tr>  
-    <li><input type="radio" name="body" value="1" id="b1">
+    <li><input type="radio" name="body" value="1" id="b1" style="display:none">
     <label for="b1"><img src="static/body1.png" title="Body 1"></label></li>
-    <li><input type="radio" name="body" value="2" id="b2">
+    <li><input type="radio" name="body" value="2" id="b2" style="display:none">
     <label for="b2"><img src="static/body2.png" title="Body 2"></label></li>
-    <li><input type="radio" name="body" value="3" id="b3">
+    <li><input type="radio" name="body" value="3" id="b3" style="display:none">
     <label for="b3"><img src="static/body3.png" title="Body 3"></label></li>
   </tr>
   </ul>
 
   <ul class="bxslider3">
   <tr>
-    <li><input type="radio" name="legs" value="1" id="l1">
+    <li><input type="radio" name="legs" value="1" id="l1" style="display:none">
     <label for="l1"><img src="static/legs1.png" title="Legs 1"></label></li>
-    <li><input type="radio" name="legs" value="2" id="l2">
+    <li><input type="radio" name="legs" value="2" id="l2" style="display:none">
     <label for="l2"><img src="static/legs2.png" title="Legs 2"></label></li>
-    <li><input type="radio" name="legs" value="3" id="l3">
+    <li><input type="radio" name="legs" value="3" id="l3" style="display:none">
     <label for="l3"><img src="static/legs3.png" title="Legs 3"></label></li>
   </tr>
   </ul>
 
 </div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('tr#f1 input:radio').click(function() {
+    var t = $('#progress');
+    if (t.css('visibility') === 'hidden'){
+      $(t.css('visibility', 'visible');
+        )}
+  });
+});
+</script>
+
+
+<!-- $(document).ready(function(){
+  $("tr#f1 input:radio").click(function() {
+    var t = $("#progress");
+    if (t.css("visibility") == "hidden"){
+    $(t.css("visibility", "visible");
+  )};
+    )};
+}); -->
+  
+
+
+
+<!-- // $(document).ready(function(){
+//   $("tr.face").on("click", (function() {
+//     if ($("#progress").css("visibility") == "hidden"){
+//     $("#progress").css("visibility", "visible");
+//   });
+//   });
+// }); -->
+  
+
+
+<!-- // $(document).ready(function(){
+// $("face").click(function() {
+//   $("#progress").css("visibility", "visible")
+//   });
+// }); -->
 
 
 

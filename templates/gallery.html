@@ -1,23 +1,23 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
+{% block body %}
 
-	<head>
-	</head>
 
 	<body>
 		<div id="bot-list">
 
 			{% for bot in bot_list %}
-			<div class="bot-summary well">
+			<tr>
+			<div class="bot-summary-well">
 				<h2>{{bot.bot_name}}</h2>
 				<img src="/static/{{bot.imgurl}}">
 				<h3>Maker: {{bot.maker_name}}, Age {{bot.maker_age}}</h3>
 				<a href="/botdetails/{{bot.bot_name}}">Bot Details</a> 
 				<!--<a class="btn btn-primary" href="/botdetails/{{bot.bot_name}}">-->
 			</div>
-			{% endfor %}
+			</tr>
 
+			{% endfor %}
 		</div>
 	</body>
 
-</html>
+{% endblock %}

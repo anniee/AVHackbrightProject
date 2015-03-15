@@ -1,18 +1,20 @@
 {% extends 'base.html' %}
 {% block body %}
 
-<div id="bot_deet"> 
 
-	<h2>{{ display_bot.common_name }}</h2>
-<img class="product-img" src="/static/{{display_bot.imgurl}}">
+		<div id="bot_deet"> 
 
-<div class="bot-details">
-	<h3>Bot details</h3>
-	<ul>
-		<li> Bot Name: {{ display_bot.bot_name }}</li>
-		<li>Maker: {{ display_bot.maker_name }}</li>
-		<li>Maker Age: {{ display_bot.maker_age }}</li>
-	</ul>
-</div>
+			<h2>{{ display_bot.common_name }}</h2>
+		<img class="product-img" src="/static/{{display_bot.imgurl}}">
+
+		<div class="bot-details">
+			<h3>Bot details</h3>
+			<ul>
+				<li> Bot Name: {{ display_bot.bot_name }}</li>
+				<li>Maker: {{ display_bot.maker_name }}</li>
+				<li>Maker Age: {{ display_bot.maker_age }}</li>
+			</ul>
+		</div>
+
 
 {% endblock %}

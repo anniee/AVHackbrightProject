@@ -1,14 +1,38 @@
+body {
+	background-color: #d3d3d3;
+	font-family: 'Orbitron', sans-serif;
+}
+
+body h2 {
+	color: #ebc2f4;
+	background-color: #b2a1b3;
+	font-weight: bold;
+	font-size: 80px;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	text-align: left;
+}
+
+body h3 {
+
+	font-weight: bold;
+	text-align: center;
+}
 
 .carousel {
 	width: 400px;
-	height: 300px;
+	height: 200px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-/*img:hover {
+
+
+img:hover {
 	opacity:0.75;
-}*/
+}
 
 
 
@@ -16,6 +40,12 @@ img:active {
 	opacity: 0.3;
 }
 
+
+/*
+.btn btn-default btn-lg {
+	margin-right: auto;
+	margin-left: auto;
+}*/
 /*#face1 {
 	border-style: solid;
 	border-width: 5px;

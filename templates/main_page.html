@@ -1,23 +1,60 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
   	<!-- jQuery library (served from Google) -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <!-- bxSlider Javascript file -->
   <script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
   <!-- bxSlider CSS file -->
- <link href="http://bxslider.com/lib/jquery.bxslider.css" rel="stylesheet" />
+<link href="http://bxslider.com/lib/jquery.bxslider.css" rel="stylesheet" />
+  <link href="/static/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="static/makestationcss.css" rel="stylesheet"/>
- <link rel="stylesheet" type="text/css" href="/static/test.css">
+<!--  <link rel="stylesheet" type="text/css" href="/static/test.css"> -->
   <script type="text/javascript" src="static/makestationjquery.js"></script>
 </head>
 
 <body>
-<div id="progress"><img src="static/progress.gif"></div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-md-12">
+      <div class="text-center">
+        <h2> BIT-z-BOTS <small>makestation</small></h2>  
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-md-12">
+      <h3> Choose your Bit-z-Bot's Face, Body and Legs! <h3>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div id="progress"><img src="static/progress.gif"></div> -->
 
 <form action="/makestation/formsubmit">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="col-md-12">
 <div class="carousel">
+  <ul class="bxslider">
+
+  <tr>
+    <li><input type="radio" name="face" value="1" id="f1" style="display:none"> 
+    <label for="f1"><img src="static/face1.png"></label></li>
+    <li><input type="radio" name="face" value="2" id="f2" style="display:none">
+    <label for="f2"><img src="static/face2.png"></label></li>
+    <li><input type="radio" name="face" value="3" id="f3" style="display:none">
+    <label for="f3"><img src="static/face3.png"></label></li>
+  </tr>
+
+  </ul>
+
+<!-- after id put style="display:none" to hide buttons
   <ul class="bxslider">
 
   <tr>
@@ -29,9 +66,7 @@
     <label for="f3"><img src="static/face3.png" title="Face 3"></label></li>
   </tr>
 
-  </ul>
-
-<!-- after id put style="display:none" to hide buttons -->
+  </ul>-->
   <!--<script>
   function faceChoice(number) {
   	console.log(number);
@@ -45,37 +80,43 @@
 
   <tr>  
     <li><input type="radio" name="body" value="1" id="b1" style="display:none">
-    <label for="b1"><img src="static/body1.png" title="Body 1"></label></li>
+    <label for="b1"><img src="static/body1.png"></label></li>
     <li><input type="radio" name="body" value="2" id="b2" style="display:none">
-    <label for="b2"><img src="static/body2.png" title="Body 2"></label></li>
+    <label for="b2"><img src="static/body2.png"></label></li>
     <li><input type="radio" name="body" value="3" id="b3" style="display:none">
-    <label for="b3"><img src="static/body3.png" title="Body 3"></label></li>
+    <label for="b3"><img src="static/body3.png"></label></li>
   </tr>
   </ul>
 
   <ul class="bxslider3">
   <tr>
     <li><input type="radio" name="legs" value="1" id="l1" style="display:none">
-    <label for="l1"><img src="static/legs1.png" title="Legs 1"></label></li>
+    <label for="l1"><img src="static/legs1.png"></label></li>
     <li><input type="radio" name="legs" value="2" id="l2" style="display:none">
-    <label for="l2"><img src="static/legs2.png" title="Legs 2"></label></li>
+    <label for="l2"><img src="static/legs2.png"></label></li>
     <li><input type="radio" name="legs" value="3" id="l3" style="display:none">
-    <label for="l3"><img src="static/legs3.png" title="Legs 3"></label></li>
+    <label for="l3"><img src="static/legs3.png"></label></li>
   </tr>
   </ul>
 
+  <tr><input type="submit" value="Make!" class="btn btn-default btn-lg"></tr>
+
+</div>
+</div>
+</div>
 </div>
 
-<script type="text/javascript">
-$(document).ready(function(){
-  $('tr#f1 input:radio').click(function() {
-    var t = $('#progress');
-    if (t.css('visibility') === 'hidden'){
-      $(t.css('visibility', 'visible');
-        )}
-  });
-});
-</script>
+
+<!--<script type="text/javascript">
+// $(document).ready(function(){
+//   $('tr#f1 input:radio').click(function() {
+//     var t = $('#progress');
+//     if (t.css('visibility') === 'hidden'){
+//       $(t.css('visibility', 'visible');
+//         )}
+//   });
+// });
+</script>-->
 
 
 <!-- $(document).ready(function(){
@@ -112,7 +153,7 @@ $(document).ready(function(){
   $(document).ready(function(){
     $('.bxslider').bxSlider({
         mode: 'fade',
-        captions: true,
+        captions: false,
         auto: false,
         autoControls: false
     });
@@ -123,7 +164,7 @@ $(document).ready(function(){
   $(document).ready(function(){
     $('.bxslider2').bxSlider({
         mode: 'fade',
-        captions: true,
+        captions: false,
         auto: false,
         autoControls: false
     });
@@ -134,14 +175,14 @@ $(document).ready(function(){
    $(document).ready(function(){
      $('.bxslider3').bxSlider({
          mode: 'fade',
-         captions: true,
+         captions: false,
          auto: false,
          autoControls: false
      });
    });
 </script>
 
-<input type="submit" value="Make!">
+
 </form>
 
 </body>

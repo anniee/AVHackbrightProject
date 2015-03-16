@@ -1,6 +1,10 @@
 body {
 	/*background-color: #d5f5d8;*/
 	font-family: 'Orbitron', sans-serif;
+	background-image: url("/static/gearscogs.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left bottom; 
 
 }
 body #icon {
@@ -10,11 +14,13 @@ body #icon {
 }
 
 body .btn-group {
-	padding-left: 300px;
+	color: #000000;
+	padding-left: 325px;
 }
 
 
 body .btn-xlarge {
+/*	color: #7d717d;*/
 	background-color: #ebc8f4;
     padding: 18px 28px;
     font-size: 28px; //change this to your desired size
@@ -25,7 +31,8 @@ body .btn-xlarge {
 }
 body h1 {
 	color: #ebc2f4;
-	background-color: #b2a1b3;
+	/*background-color: #b2a1b3;*/
+	background-color: #7d717d;
 	font-weight: bold;
 	font-size: 120px;
 	margin-left: 0px;
@@ -36,12 +43,19 @@ body h1 {
 	text-align: left;
 }
 
+body #gif {
+}
+/*body h1 img {
+	padding-left: 40px;
+	padding-right: -20px;
+}
+*/
 body small h2 {
 	font-size: 40px;
 	font-style: italic;
-	color: #000000;
+	color: #d3d3d3;
 	padding-top: 0px;
-	padding-left: 240px;
+	padding-left: 200px;
 }
 
 body h2 {

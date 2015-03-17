@@ -1,15 +1,36 @@
-{% extends 'base.html' %}
-{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+		<meta charset="utf-8">
+	<title> bot </title>
+
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+	<link href="./static/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/static/botdeets.css" rel="stylesheet">
+
+</head>
+
+
 <body>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-md-12">
+      <div class="text-center">
+        <h2> BIT-z-BOTS </h2>  
+      </div>
+    </div>
+  </div>
+</div>
 
 <img src="{{ png_filename }}"/>
 
 
-<form action="/makestation/formsubmit/bot/uploadtoimat">
+<h3><form action="/makestation/formsubmit/bot/uploadtoimat">
     <input type="text" name="filename" value="static/stl/{{ stl_filename }}">
     <!-- input type hidden later-->
 	<input type="submit" value="Purchase your model on i.materialise!">
-</form>
+</form></h3>
 
-</div>
-{% endblock %}
+</body>
+</html>

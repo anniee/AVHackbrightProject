@@ -1,20 +1,52 @@
-{% extends 'base.html' %}
-{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+	<link href="/static/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/static/botdeets.css" rel="stylesheet">
 
+</head>
+</body>
+
+<body>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-md-12">
+      <div class="text-center">
+        <h2> BIT-z-BOTS <small>{{ display_bot.maker_name }}'s BitzBot</small></h2>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="btn-group" role="button">
+			<a href="/" class="btn btn-default btn-xlarge"><span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></span> home</a>
+			<a href="/makestation" class="btn btn-default btn-xlarge"><img src="/static/noun_1248.png" height="40"/>makestation</a>
+			<a href="/gallery" class="btn btn-default btn-xlarge"><span class="glyphicon glyphicon glyphicon-th" aria-hidden="true"></span> gallery</a>
+			<a href="/about" class="btn btn-default btn-xlarge"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> about</a>
+		</div>
+	</div>
+</div>
 
 		<div id="bot_deet"> 
 
-			<h2>{{ display_bot.common_name }}</h2>
+			<h3> Hi, I'm {{ display_bot.bot_name }}!</h3> 
+		</div>
 		<img class="product-img" src="/static/{{display_bot.imgurl}}">
 
 		<div class="bot-details">
-			<h3>Bot details</h3>
-			<ul>
-				<li> Bot Name: {{ display_bot.bot_name }}</li>
-				<li>Maker: {{ display_bot.maker_name }}</li>
-				<li>Maker Age: {{ display_bot.maker_age }}</li>
-			</ul>
+
+				<h3><div> I was made by: </div>
+
+				<div>{{ display_bot.maker_name }}, age {{ display_bot.maker_age }}</div></h3>
+			
+				<!-- <h3><div>Bot Name: {{ display_bot.bot_name }}</div> -->
+<!-- 				<div>Maker: {{ display_bot.maker_name }}</div>
+				<div>Maker Age: {{ display_bot.maker_age }}</div></h3> -->
+			
 		</div>
-
-
-{% endblock %}
+</body>
+</html>

@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+	<link href="/static/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/static/madebot.css" rel="stylesheet">
+
 </head>
 
 <!-- can I put an if statement here, in jinja? like to specifcy if whaterver = 12, render 12.jpg?-->
 
 <body>
+
+	<div class="container-fluid">
+	  <div class="row-fluid">
+	    <div class="col-md-12">
+	      <div class="text-center">
+	        <h2> BIT-z-BOTS <small>makestation</small></h2>  
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
 	<div><img src="/static/{{ png_filename }}"/></div>
 
 <form action="/makestaton/formsubmit/bot">
 
-	Name Your BitzBot:<br>
+	<h3>Name Your BitzBot:<br>
 	<input type="text" name="botname">
 	<br>
 	Enter Your Name:<br>
 	<input type="text" name="makername">
 	<br>
 	Enter Your Age:<br>
-	<input type="text" name="makerage">
-	<br> 
-	<input name="pngfile" value="{{ png_filename }}"/>
+	<input type="text" name="makerage"></h3>
+	<br>
+	<input name="pngfile" value="{{ png_filename }}" style="display:none"/>
 
 	<!--<img src="/static/{{ png_filename }}"/>-->
 	<!--<input type="image" src="/static/{{ png_filename }}" name="pngfile" value="/static/{{ png_filename }}" id="/static/{{ png_filename }}"/>-->
 
-	<input type="checkbox" name="botstuff" id="ok"><label for="ok">Upload your bot</label>
+	<h3><input type="checkbox" name="botstuff" id="ok"><label for="ok">Share your bot with everyone!</label></h3>
 	
 	<!--<input type="submit" name="pngfile" value="{{ png_filename }}" id="1"><label for="1">"Upload your bot to the gallery!"</label>-->
-	<input type="submit" value"upload your bot to the gallery!">
+	<h3><input type="submit" value="upload"></h3>
 </form>
 
 <!-- <form action="/bot">

@@ -40,8 +40,9 @@ def make_new_bot(bot_name, maker_name, maker_age, imgurl):
 	conn.commit()
 	conn.close()
 
-	return "Successfully added BitzBot: %s" %(bot_name)
+	return ""
 
+	# return "Successfully added BitzBot: %s" %(bot_name)
 
 def get_bots():
 	""" Query the db for bitzbots, wrap each row in a bots object"""

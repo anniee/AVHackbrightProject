@@ -1,14 +1,44 @@
-{% extends 'base.html' %}
-{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+	<link href="/static/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/static/gallery.css" rel="stylesheet">
+	<title>BitzBots Gallery</title>
+
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-md-12">
+      <div class="text-center">
+        <h2> BIT-z-BOTS <small>gallery</small></h2>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="btn-group" role="button">
+			<a href="/" class="btn btn-default btn-xlarge"><span class="glyphicon glyphicon glyphicon-home" aria-hidden="true"></span> home</a>
+			<a href="/makestation" class="btn btn-default btn-xlarge"><img src="static/noun_1248.png" height="40"/>makestation</a>
+			<a href="/gallery" class="btn btn-default btn-xlarge"><span class="glyphicon glyphicon glyphicon-th" aria-hidden="true"></span> gallery</a>
+			<a href="about" class="btn btn-default btn-xlarge"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> about us</a>
+		</div>
+	</div>
+</div>
 
 
-	<body>
+
 		<div id="bot-list">
 
 			{% for bot in bot_list %}
 			<tr>
 			<div class="bot-summary-well">
-				<h2>{{bot.bot_name}}</h2>
+				<h4>{{bot.bot_name}}</h4>
 				<img src="/static/{{bot.imgurl}}">
 				<h3>Maker: {{bot.maker_name}}, Age {{bot.maker_age}}</h3>
 				<a href="/botdetails/{{bot.bot_name}}">Bot Details</a> 
@@ -18,6 +48,6 @@
 
 			{% endfor %}
 		</div>
-	</body>
+</body>
+</html>
 
-{% endblock %}

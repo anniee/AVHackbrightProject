@@ -1,11 +1,15 @@
 body {
 	background-color: #d3d3d3;
 	font-family: 'Orbitron', sans-serif;
+/*	background: url("/static/controlpanel.gif");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;*/
 }
 
 body h2 {
 	color: #ebc2f4;
-	background-color: #b2a1b3;
+	background-color: #7d717d;
 	font-weight: bold;
 	font-size: 80px;
 	margin-top: 10px;
@@ -13,6 +17,10 @@ body h2 {
 	padding-bottom: 0px;
 	padding-left: 20px;
 	text-align: left;
+}
+
+body h2 small {
+	color: #d3d3d3;
 }
 
 body h3 {
@@ -38,6 +46,52 @@ img:hover {
 
 img:active {
 	opacity: 0.3;
+}
+
+.btn-default {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@-webkit-keyframes glowing {
+  0% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+  50% { background-color: #0094FF; -webkit-box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+  50% { background-color: #0094FF; -moz-box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+}
+
+@keyframes glowing {
+  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
+  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+}
+
+.btn-default {
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
 }
 
 

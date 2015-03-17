@@ -1,0 +1,44 @@
+body {
+	font-family: 'Orbitron', sans-serif;
+	background-color: #d3d3d3;
+}
+
+body h2 {
+	color: #ebc2f4;
+	background-color: #7d717d;
+	font-weight: bold;
+	font-size: 80px;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	text-align: left;
+}
+
+body h2 small {
+	color: #d3d3d3;
+}
+
+body .btn-group {
+	color: #000000;
+	padding-left: 325px;
+}
+
+
+body .btn-xlarge {
+/*	color: #7d717d;*/
+	background-color: #ebc8f4;
+    padding: 18px 28px;
+    font-size: 28px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+
+
+.bot-summary-well {
+	display: inline-block;
+	margin: 1em;
+}

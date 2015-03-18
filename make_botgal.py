@@ -53,18 +53,15 @@ def upload_to_gallery():
 	maker_age = request.args.get('makerage')
 	imgurl = request.args.get('pngfile')
 	# print imgurl
-	newbot = model.make_new_bot(bot_name, maker_name, maker_age, imgurl)
-	return newbot, show_bot()
+	model.make_new_bot(bot_name, maker_name, maker_age, imgurl)
 
-# @app.route('/bot')
-def show_bot():
-	png = request.args.get('pngfile')
-	png2 = "/static/" + png
-	print png2
-	stl_name = png.rstrip('.png') + ".stl"
+
+	png_name = "/static/" + imgurl
+	print png_name
+	stl_name = imgurl.rstrip('.png') + ".stl"
 	#stl_name = png.rstrip('.png') + ".stl"
 	print stl_name
-	return render_template("bot.html", png_filename=png2, stl_filename=stl_name)
+	return render_template("bot.html", png_filename=png_name, stl_filename=stl_name)
 
 @app.route('/botdetails/<bot_name>')
 def show_bot_deets(bot_name):

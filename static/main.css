@@ -46,13 +46,7 @@ body h1 {
 	text-align: left;
 }
 
-body #gif {
-}
-/*body h1 img {
-	padding-left: 40px;
-	padding-right: -20px;
-}
-*/
+
 body small h2 {
 	font-size: 40px;
 	font-style: italic;
@@ -87,10 +81,17 @@ body h5 {
 	text-align: right;
 }
 
-#gif {
+#content {
 	text-align: center;
-	padding-top: 20px;
-	padding-left: 300px;
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+
+#bitzy {
+	text-align: right;
+	margin-right: 200px;
+	margin-top: 20px;
+	margin-bottom: 35px;
 }
 
 #instructions {
@@ -103,34 +104,34 @@ line-height: 60px;
 
 }
 
-#test {
-	text-align: right;
-}
-
 
 
 #keyword1 {
+	text-align: left;
 	color: #ebc8f4;
 	font-size: 40px;
 }
 
 #keyword2 {
 	color: #ebc8f4;
-	padding-left: 40px;
+	padding-left: 180px;
 	font-size: 40px;
 
 }
 
 #keyword3 {
 	color: #ebc8f4;
-	padding-left: 40px;
+	padding-left: 180px;
 	font-size: 40px;
 }
 
-#slogan {
+/*#slogan {
+
+	padding-left: 500px;
 	text-align: center;
-	font-size: 50px;
-}
+	font-size: 35px;
+
+}*/
 
 /*
 .menu {

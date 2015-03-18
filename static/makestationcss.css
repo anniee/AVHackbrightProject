@@ -24,7 +24,7 @@ body h2 small {
 }
 
 body h3 {
-
+	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
 }
@@ -49,7 +49,7 @@ img:active {
 }
 
 .btn-default {
-  background-color: #004A7F;
+  background-color: #d3b3d5;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   border: none;
@@ -64,27 +64,27 @@ img:active {
 }
 
 @-webkit-keyframes glowing {
-  0% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+  0% { background-color: #d3b3d5; -webkit-box-shadow: 0 0 3px #d3b3d5; }
   50% { background-color: #0094FF; -webkit-box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+  100% { background-color: #d3b3d5; -webkit-box-shadow: 0 0 3px #d3b3d5; }
 }
 
 @-moz-keyframes glowing {
-  0% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+  0% { background-color: #d3b3d5; -moz-box-shadow: 0 0 3px #d3b3d5; }
   50% { background-color: #0094FF; -moz-box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+  100% { background-color: #d3b3d5; -moz-box-shadow: 0 0 3px #d3b3d5; }
 }
 
 @-o-keyframes glowing {
-  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  0% { background-color: #d3b3d5; box-shadow: 0 0 3px #d3b3d5; }
   50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  100% { background-color: #d3b3d5; box-shadow: 0 0 3px #d3b3d5; }
 }
 
 @keyframes glowing {
-  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  0% { background-color: #d3b3d5; box-shadow: 0 0 3px #d3b3d5; }
   50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  100% { background-color: #d3b3d5; box-shadow: 0 0 3px #d3b3d5; }
 }
 
 .btn-default {
@@ -92,6 +92,15 @@ img:active {
   -moz-animation: glowing 1500ms infinite;
   -o-animation: glowing 1500ms infinite;
   animation: glowing 1500ms infinite;
+}
+
+.bx-wrapper .bx-viewport {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border: 0px;
+    left: -5px;
+    background: #d3d3d3;
 }
 
 

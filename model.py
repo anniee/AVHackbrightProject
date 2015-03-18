@@ -40,7 +40,7 @@ def make_new_bot(bot_name, maker_name, maker_age, imgurl):
 	conn.commit()
 	conn.close()
 
-	return ""
+
 
 	# return "Successfully added BitzBot: %s" %(bot_name)
 

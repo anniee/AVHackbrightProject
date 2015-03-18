@@ -36,7 +36,9 @@ body .btn-xlarge {
             border-radius: 8px;
 }
 
-
+body h4 {
+	font-size: 25px;
+}
 
 .bot-summary-well {
 	display: inline-block;

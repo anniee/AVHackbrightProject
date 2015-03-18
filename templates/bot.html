@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 
-		<meta charset="utf-8">
-	<title> bot </title>
+	<meta charset="utf-8">
+<!-- 	<title>3D Print Bitz Bot</title> -->
 
 	<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
 	<link href="./static/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/static/botdeets.css" rel="stylesheet">
+	<link href="/static/botprint.css" rel="stylesheet">
 
 </head>
 
@@ -17,24 +17,25 @@
   <div class="row-fluid">
     <div class="col-md-12">
       <div class="text-center">
-        <h2> BIT-z-BOTS </h2>  
+        <h2> BIT-z-BOTS <small>3D print</h2>  
       </div>
     </div>
   </div>
 </div>
 
+<div><h3>Your BitzBot is awesome!</div>
 <img src="{{ png_filename }}"/>
+<div><h3>3D Print to bring it to life!</h3></div>
 
-
-<h3><form action="/makestation/formsubmit/bot/uploadtoimat">
-    <input type="text" name="filename" value="static/stl/{{ stl_filename }}">
+	<form action="/makestation/formsubmit/bot/uploadtoimat">
+    <input type="text" name="filename" value="static/stl/{{ stl_filename }}" style="display:none">
     <!-- input type hidden later-->
-	<input type="submit" value="3D Print your BitzBot!">
+	<h3><input type="submit" value="3D Print your BitzBot!"></h3>
 
 <!-- <a href="#" class="btn btn-success btn-lg">
       <span class="glyphicon glyphicon-print"></span> Print 
     </a> -->
-</form></h3>
+	</form>
 
 </body>
 </html>

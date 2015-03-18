@@ -7,7 +7,6 @@
 	<link href="/static/botdeets.css" rel="stylesheet">
 
 </head>
-</body>
 
 <body>
 <div class="container-fluid">
@@ -43,6 +42,12 @@
 
 				<div>{{ display_bot.maker_name }}, age {{ display_bot.maker_age }}</div></h3>
 			
+<form action="#">
+    <input type="text" name="filename" value="static/stl/{{ stl_filename }}" style="display:none">
+    <!-- input type hidden later-->
+	<h3><input type="submit" value="3D Print me!"></h3>
+</form>
+
 				<!-- <h3><div>Bot Name: {{ display_bot.bot_name }}</div> -->
 <!-- 				<div>Maker: {{ display_bot.maker_name }}</div>
 				<div>Maker Age: {{ display_bot.maker_age }}</div></h3> -->

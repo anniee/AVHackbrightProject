@@ -39,7 +39,7 @@ dev-friendly 3D printing APIs, the developer discovered i.materialise, whose sim
 Connection API made the 3D fabrication aspect of the project feasible. 
 
 Stitching together the components to make a unique .stl file for each Bit-z-Bot was difficult, but to optimize 
-loading time of the app during creation of the figurine, the app was simplified to including three choices for each
+loading time of the app during creation of the figurine, the app was simplified to include three choices for each
 component, and the .stl files were quickly hardcoded (i.e. with the "face" component positioned at fixed positive y-axis, 
 "body" centered at origin, and "legs" at fixed negative y-axis).
 

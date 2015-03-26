@@ -73,4 +73,4 @@ computer screen, and their tiny stature afforded them their name "Bitsy" Bots.
 
 Though the initial problem space Bit-z-Bots entered was focused on fostering girls' interest in science and tech (thus
 the app catered toward girls' general preferences), the creator quickly realized that everyone wanted their own Bit-z-Bot.
-Bit-z-Bots, is of course open to creation by all genders and ages, with an emphasis on tech being inclusive to young girls.
+Bit-z-Bots is of course open to creation by all genders and ages, with an emphasis on tech being inclusive to young girls.

@@ -19,7 +19,7 @@ The ability to change a Bit-z-Bot's color and size, and to purchase it for 3D fa
 the i.materialise 3D Print Lab Connection API (specifically, a POST request using the appropriate .stl file and 
 redirection of the user to the i.materialise site).
 
-Frontend tech stack also includes use of HTML5, Jinja, CSS3, JQuery, and Bootstrap.
+Frontend tech stack also includes use of HTML5, Jinja, CSS3, JQuery, Bootstrap, and Adobe Illustrator.
 
 <h2>Basic Principles</h2>
 

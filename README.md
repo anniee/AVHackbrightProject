@@ -8,8 +8,13 @@ the lack of creative, intelligent, tech-related toys available for girls.
 
 Why give a girl a doll if she can make her own?</h5>
 
+<h2>Maker Faire Bay Area 2017</h2> 
+BitzBots was accepted for exhibition at MakerFaire Bay Area 2017! Please visit www.bitzbots.com to use the deployed site and make your own BitzBot! Additionally, visit my other repo, `bit_z_bots_beta`, for the corresponding rebuilt pure frontend code, which was used to make a simple interface that could be interacted with and email stl files during Maker Faire. Reminder that BitzBots is for everyone, girls, boys, children, adults and everyone inbetween!
+
+"Bit-z-Bots: a web application for customizing and creating miniature 3D-printed robot figurines. Cute and unassuming, a Bit-z-Bot's noble purpose in its 3D-fabricated life is to inspire children's (and adults'!) interest in creative technology."
+
 <h2>Announcement: Rebuilding BitzBots!</h2>
-Since its creation, the developer of BitzBots has gained some coding skills, and will therefore be rebuilding BitzBots with Ruby on Rails. The code in this repository will be slightly improved upon, but mostly left in its original form as a fossil and fond memory of the developer's first major programming project.
+Since its creation, the developer of BitzBots has gained some coding skills, and will therefore be rebuilding with AngularJS. The code in this repository will be slightly improved upon, but mostly left in its original form as a fossil and fond memory of the developer's first major programming project.
 
 <h2>Installation</h2>
 Clone this repository and visit i.materialise's developer sandbox to acquire API key for the 3D Printing Lab Connection API-- set this as TOOL_ID in an executable secret file, e.g. in a file named "secrets.sh":

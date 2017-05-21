@@ -9,7 +9,7 @@ the lack of creative, intelligent, tech-related toys available for girls.
 Why give a girl a doll if she can make her own?</h5>
 
 <h2>Maker Faire Bay Area 2017</h2> 
-BitzBots was accepted for exhibition at MakerFaire Bay Area 2017! Please visit www.bitzbots.com to use the deployed site and make your own BitzBot! Additionally, visit my other repo, `bit_z_bots_beta`, for the corresponding rebuilt pure frontend code, which was used to make a simple interface that could be interacted with and email stl files during Maker Faire. Reminder that BitzBots is for everyone, girls, boys, children, adults and everyone inbetween!
+BitzBots was accepted for exhibition at MakerFaire Bay Area 2017! Please visit www.bitzbots.com on Chrome to use the deployed site and make your own BitzBot! Additionally, visit my other repo, `bit_z_bots_beta`, for the corresponding rebuilt pure frontend code, which was used to make a simple interface that could be interacted with and email stl files during Maker Faire. Reminder that BitzBots is for everyone, girls, boys, children, adults and everyone inbetween!
 
 "Bit-z-Bots: a web application for customizing and creating miniature 3D-printed robot figurines. Cute and unassuming, a Bit-z-Bot's noble purpose in its 3D-fabricated life is to inspire children's (and adults'!) interest in creative technology."
 
